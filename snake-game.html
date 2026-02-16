@@ -32,7 +32,7 @@
             align-items: center;
             padding: 10px;
             width: 100%;
-            max-width: 500px;
+            max-width: 800px;
         }
         
         .header {
@@ -278,7 +278,7 @@
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         
-        const GRID_SIZE = 20;
+        const GRID_SIZE = 40;
         const GRID_COUNT_X = 18;
         const GRID_COUNT_Y = 14;
         
@@ -425,7 +425,7 @@
             snake.unshift(head);
             
             if (head.x === food.x && head.y === food.y) {
-                score += 10;
+                score += 20;
                 foodEaten++;
                 document.getElementById('score').textContent = score;
                 createParticles(food.x * GRID_SIZE + GRID_SIZE / 2, food.y * GRID_SIZE + GRID_SIZE / 2);
