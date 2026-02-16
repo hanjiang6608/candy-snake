@@ -46,32 +46,32 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            padding: 10px 20px;
+            padding: 8px 15px;
             background: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            margin-bottom: 15px;
+            border-radius: 15px;
+            margin-bottom: 10px;
             box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
         }
         
         .title {
-            font-size: 24px;
+            font-size: 18px;
             color: #FF69B4;
             text-shadow: 2px 2px 0 #fff, 3px 3px 0 #FFB6C1;
         }
         
         .score-box {
             display: flex;
-            gap: 15px;
+            gap: 10px;
         }
         
         .score, .high-score {
-            font-size: 18px;
+            font-size: 14px;
             color: #9370DB;
         }
         
         .score span, .high-score span {
             color: #FF69B4;
-            font-size: 22px;
+            font-size: 16px;
         }
         
         .game-area {
@@ -121,10 +121,10 @@
         }
         
         .game-title {
-            font-size: 42px;
+            font-size: 32px;
             color: #FF69B4;
             text-shadow: 3px 3px 0 #FFB6C1, 5px 5px 0 #9370DB;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             animation: bounce 1s ease infinite;
         }
         
@@ -145,17 +145,17 @@
         }
         
         .btn {
-            padding: 15px 40px;
-            font-size: 22px;
+            padding: 12px 30px;
+            font-size: 18px;
             font-family: inherit;
             border: none;
-            border-radius: 50px;
+            border-radius: 40px;
             cursor: pointer;
             transition: all 0.3s ease;
             background: linear-gradient(135deg, #FF69B4 0%, #FFB6C1 100%);
             color: white;
             box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
-            margin-top: 20px;
+            margin-top: 15px;
         }
         
         .btn:hover {
@@ -168,20 +168,20 @@
         }
         
         .message {
-            font-size: 28px;
+            font-size: 24px;
             color: #9370DB;
-            margin: 15px 0;
+            margin: 10px 0;
             text-align: center;
         }
         
         .final-score {
-            font-size: 36px;
+            font-size: 28px;
             color: #FF69B4;
-            margin: 10px 0;
+            margin: 8px 0;
         }
         
         .encourage {
-            font-size: 20px;
+            font-size: 18px;
             color: #FFB6C1;
             animation: pulse 1s ease infinite;
         }
@@ -288,10 +288,10 @@
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         
-        const GRID_COUNT_X = 15;
-        const GRID_COUNT_Y = 12;
-        let GRID_SIZE = Math.floor((window.innerWidth - 40) / GRID_COUNT_X);
-        GRID_SIZE = Math.min(GRID_SIZE, 35);
+        const GRID_COUNT_X = 12;
+        const GRID_COUNT_Y = 10;
+        let GRID_SIZE = Math.floor((window.innerWidth - 60) / GRID_COUNT_X);
+        GRID_SIZE = Math.max(GRID_SIZE, 22);
         
         canvas.width = GRID_COUNT_X * GRID_SIZE;
         canvas.height = GRID_COUNT_Y * GRID_SIZE;
